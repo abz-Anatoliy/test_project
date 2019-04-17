@@ -1,0 +1,48 @@
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css"
+
+//.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick
+//  color: red !important
+//  border: 1px solid #000 !important
+//  outline: 1px solid green !important
+//
+//.mat-focused
+//  color: red !important
+//  border: 1px solid #000 !important
+//  outline: 1px solid green !important
+
+//::ng-deep .mat-focused .mat-form-field-label
+//  color: green !important
+//
+//::ng-deep.mat-form-field-underline
+//  background-color: green !important
+//  border: 1px solid #000 !important
+//  outline: 1px solid green !important
+//
+//::ng-deep.mat-form-field-ripple
+//  background-color: green !important
+
+// миксинги
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline,     // outline в обычном состоянии
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick,  // outline focused
+  color: #aaa !important
+
+::ng-deep .mat-form-field-label,   // label в обычном состоянии
+::ng-deep .mat-focused .mat-form-field-label  // label focused
+  color: #777 !important
+
+.mat-form-field-autofill-control
+  color: #777
+  font-weight: 400
+  +placeholder
+    color: #777
+

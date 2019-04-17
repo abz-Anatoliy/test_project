@@ -1,0 +1,38 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>Welcome to {{ title }}!</h1>
+</div>
+
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    Here are some links to help you start:
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="https://angular.io/tutorial">Tour of Heroes</a>
+    <a class="dropdown-item" href="https://angular.io/cli">CLI Documentation</a>
+    <a class="dropdown-item" href="https://blog.angular.io/">Angular blog</a>
+  </div>
+</div>
+
+<br><br>
+
+<form class="example-form">
+  <mat-form-field floatLabel="always" appearance="outline">
+    <mat-label>Label</mat-label>
+    <input matInput placeholder="Label text" >
+    <mat-hint>Assistive text</mat-hint>
+  </mat-form-field>
+
+  <br><br>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Outline form field</mat-label>
+    <input matInput placeholder="Placeholder">
+    <mat-icon matSuffix>arrow_drop_down</mat-icon>
+    <mat-hint>Assistive text</mat-hint>
+  </mat-form-field>
+</form>
+
+<br><br>
+
+<router-outlet></router-outlet>
